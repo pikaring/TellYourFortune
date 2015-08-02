@@ -22,10 +22,10 @@
 </div><!-- /#header-->
 <div id="contents">
 <h1><a href="index.html">configuration</a></h1>
-<h2>Choose you sign</h2>
+<h2>Choose your sign</h2>
 <form>
 <p>
-<select id="color" size="4">
+<select id="sign" size="4">
 	<option value="0" selected>Aries</option>
 	<option value="1">Taurus</option>
 	<option value="2">Gemini</option>
@@ -130,10 +130,9 @@
 <script>
 
 function saveOptions() {
-	var colorValue = parseInt($('#color').val());
-	var weatherValue = parseInt($('#weather').val());
+	var signValue = parseInt($('#sing').val());
 	var tempValue = parseInt($('#temp').val());
-	var sendValue =[colorValue,weatherValue,tempValue];
+	var sendValue =[signValue,tempValue];
 <!--alert(sendValue);-->	
 	return sendValue;
 }
